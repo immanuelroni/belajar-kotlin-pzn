@@ -35,6 +35,6 @@ fun main() {
 
     println(cetakPesanLambdaExpression("Teks1",upperTransformer))
     println(cetakPesanLambdaExpression("Teks2",lowercaseTransformer))
-    // lambda expression ternyata juga bisa ditulis dibelakang fun
+    // lambda expression ternyata juga bisa ditulis dibelakang fun / trailing lambda
     println(cetakPesanLambdaExpression("Teks2"){it.uppercase()})
 }
