@@ -1,5 +1,7 @@
 /*
     Inline Fun
+    - HOF : HIGH ORDER FUNCTION
+    - INF : INLINE FUNCTION
     - Menggunakan High Order Fun adalah fitur yang ammpuh
     - Namun hal ini makan resource, krn harus buat obj lambda berulang-ulang, jika terlalu banyak akan berasa
     - Inline fun adalah kemampuan Kotlin mengubah HOF menjadi Inline Fun
@@ -8,24 +10,25 @@
  */
 
 inline fun helloInline(nama:()->String): String{
-    return "Hai Inline Fun ${nama()}" // call the lambda
+    return "using inline function: ${nama()}" // call the lambda
 }
 
 
 // no inline agar tidak inline. tapi ya apa fungsinya
 inline fun helloMix(
-    noinline namaDepan: () -> String,
-    noinline namaBelakang: () -> String): String {
-    return "Hai ${namaDepan} ${namaBelakang}"
-
+    namaDepan: () -> String,
+    noinline namaBelakang: () -> String // tidak kita inline, misal karena jarang dipanggil
+): String {
+    return "Hai ${namaDepan()} ${namaBelakang()}"
 }
 
 fun main() {
-    println(helloInline { "Roni" })
-    println(helloInline { "Immanuel" })
+    println(helloInline { "Roni" })     // langsung isi data berupa String Lambda
+    println(helloInline { "Immanuel" }) // langsung isi data berupa String Lambda
 
     for (i in 1..100){
-        println(helloInline { "ini akan berat" })
+        println(helloInline { "ini akan berat tanpa inline funtion" })
+        println(helloMix({"Adi"},{"Susanto"}))
     }
 
     println(helloMix({"Adi"},{"Susanto"}))

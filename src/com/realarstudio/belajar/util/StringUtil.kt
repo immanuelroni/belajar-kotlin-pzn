@@ -6,6 +6,7 @@ package com.realarstudio.belajar.util
     Perlu adanya fun main yang panggil dengan menggunakan syntax import untuk menjalankan fun disini
 
     - Secara standart file kotlin hanya bisa mengakses file kotlin dari package yang sama
+    - cak file 34_ImportPackage.kt untuk import
  */
 fun sayHi(pesan:String){
     println("Say Hi")

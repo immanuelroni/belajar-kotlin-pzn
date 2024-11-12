@@ -14,8 +14,8 @@
     3. parameter tidak boleh varargs dan tidak boleh memiliki nilai default
  */
 infix fun String.ubahKe(type: String):String{
-    if(type=="Up"){
-        return this.uppercase()
+    if(type=="Up"){             // gunakan parameternya untuk mengakses data kanan
+        return this.uppercase() // gunakan this untuk mengakses data kiri
     }else{
         return this.lowercase()
     }
@@ -24,5 +24,6 @@ infix fun String.ubahKe(type: String):String{
 fun main() {
  val hasil = "Roni" ubahKe "Up"
     println(hasil)
-    1 downTo 100
+
+    1 downTo 100 // salah satu contoh infix notation
 }

@@ -9,23 +9,24 @@ fun HaloDunia(){
     println("Halo cuk")
 }
 
-//function dengan parameter, saweran bisa null
+//function dengan parameter, saweran bisa null dengan tanda tipeData?
 fun sayHello(nama:String ,pesan: String, saweran: String? ){
     if(saweran==null){
-        println("$nama Hallo, $pesan")
+        println("$nama Hallo, $pesan, Saweran:0")
     }else{
         println("$nama Hallo, $pesan,  $saweran")
     }
 
 }
-
+//-------------DEFAULT PARAMETER--------------------------------
+// tipeData = "nilai default"
 fun sawerYuk(nama: String, pesanSaweran: String = ""){
     println("Function Default parameter ")
     println("Nama: $nama, Pesan:$pesanSaweran")
 }
 
     /*
-    Named argument
+    ------------ Named argument ------------------------
     kita bisa menyebutkan nama parameter saat memanggil funcion, tanpa kita tahu posisi parameter,
     depan belakangnya.
 

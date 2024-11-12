@@ -16,7 +16,7 @@ fun main(){
     var hasil2: Int = 10+2/2
     println(hasil2)
 
-    // Penggunaan Double
+    // Penggunaan Double ada .0 nya
     var hasil4 = 10.0/3.0
     println(hasil4)
 

@@ -27,22 +27,24 @@ fun main(){
 */
 
 fun main() {
-    val members: Array<String> = arrayOf("Roni", "Ganish", "Pashya")
+    val members: Array<String> =  arrayOf("Roni", "Ganish", "Pashya")
     val roni: String = members[0]
     val ganish: String = members.get(1)
     val pashya: String = members.get(2)
 
+    // mengubah data di posisi index
     members.set(0, "Herta")
     val herta: String = members[0]
     println(herta)
     // sekalipun val tetapi masih bisa di ganti isinya, tetapi tidak bisa di ganti arraynya lagi
-    // Contoh yang gak bisa names = arrayOf("arrayBaru")
+    // Contoh yang gak bisa
+    // members = arrayOf("arrayBaru")
     // namun ngubah isi arraynya masih bisa
 
-    // NOTES
+    //--------------NOTES--------------------
     // array juga tidak bisa null, misal names[0]=null
 
-    // Cara Membuat Null dalam Array
+    //-------------NULLABLE ARRAY -----------------
 
     val members2: Array<String?> = arrayOfNulls(5)
     members2[0]="Roni"

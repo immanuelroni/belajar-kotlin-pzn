@@ -8,10 +8,11 @@
 
 fun main() {
 
-    fun cetakPesanLambdaExpression(value:String, transformerText: (String)->String):String {
+    fun cetakPesan(value:String, transformerText: (String)->String):String {
         return "Teks ini ditransform jadi ${transformerText(value)}"
     }
-
+    //-------------- SYNTAX --------------
+    // val namaVar = fun(a:TipeData): TipeDataReturn {}
     val anonUpper = fun(x:String): String {
         if(x.isBlank()){
             return "Kosong!"
@@ -19,12 +20,12 @@ fun main() {
             return x.uppercase()
         }
     }
+    // jadi anon function kini bisa di akses seperti lambda
+    println(cetakPesan("Roni",anonUpper))
+    println(cetakPesan("",anonUpper))
 
-    println(cetakPesanLambdaExpression("Roni",anonUpper))
-    println(cetakPesanLambdaExpression("",anonUpper))
-
-    //bisa juga seperti ini
-    println(cetakPesanLambdaExpression("",fun(x:String):String{
+    //anonymouse function juga bisa seperti ini
+    println(cetakPesan("",fun(x:String):String{
         return x.lowercase()
     }))
 

@@ -9,10 +9,10 @@ fun main(){
     val NilaiAkhir = 80
     val kehadiran = 75
 
-    val LolosNilaiAkhir = NilaiAkhir > 75
-    val LolosKehadiran = kehadiran > 80
+    val lolosNilaiAkhir = NilaiAkhir > 70
+    val lolosKehadiran = kehadiran > 60
 
-    val pass = LolosNilaiAkhir && LolosKehadiran
+    val pass = lolosNilaiAkhir && lolosKehadiran
     println(pass)
 
 }

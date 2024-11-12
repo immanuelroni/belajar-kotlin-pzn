@@ -1,4 +1,4 @@
-/*
+ /*
     Extention Function adalah kemampuan untuk menambahkan fun pada tipe data yang sudah ada
     Extention Function adalah salah satu fitur yang sangat ampuh, harus bijak saat memakai, sebab sulit dimengerti
     programmer lain saat documentation, seperti magic
@@ -11,6 +11,7 @@ fun String.hello():String{
 }
 //mixing extention func dan single expression fun
 fun String.Hi(): Unit = println("Hi $this")
+fun Int.test(): Unit = println("ini nilai int: $this")
 
 fun main() {
     val name: String = "Roni"
@@ -18,5 +19,6 @@ fun main() {
 
     //bahkan bisa seperti ini
     "Ganish".Hi()
+    2.test()
 
 }

@@ -16,7 +16,7 @@ fun main() {
 
     for (i in 1..100){
         if(i%2==0){
-            continue // keluar loop lanjut ke loop selanjutnya
+            continue // keluar loop lanjut ke loop selanjutnya, tidak keluar dari perulangan seperti break.
         }
         println("$i") // bakal cetak semua bilangan ganjil
     }

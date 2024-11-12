@@ -10,4 +10,5 @@ fun main() {
         println("while loops $i")
         i++
     }while (i < 10)
+    println("Perulangan Selesai")
 }

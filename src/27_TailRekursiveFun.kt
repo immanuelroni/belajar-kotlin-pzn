@@ -25,7 +25,7 @@ fun main() {
         }
     }
 
-    displayTailRec(10000)
+//    displayTailRec(10000)
 
     // ini cara panggil tailrec yang salah karena ada operasi perkalian sebelumnya
     tailrec fun factorial(n: Long): Long {
@@ -41,6 +41,14 @@ fun main() {
             else -> factorialtype2(n - 1, total * n)
         }
     }
+    /*
+    factorialType2(5,1)
+    factorialType2(4,5)
+    factorialType2(3,20)
+    factorialType2(2,60)
+    factorialType2(1,120)
+    return 120
+     */
 
-    println(factorial(100))
+    println(factorialtype2(5))
 }

@@ -1,6 +1,6 @@
 /*
     Closures
-    - Adalah kemampuan sebuah fun, lambda atau anon fun untuk berinteraksi dengan data di sekitarnya.
+    - Adalah kemampuan sebuah fun, lambda atau anon fun untuk berinteraksi dengan data di sekitarnya dalam scope yang sama.
     - Mirip dengan acess modifier di Java sepertinya
     - Harap hindari penggunaan Closure karena dapat berbahaya jika salah penggunaan, bisa akses data dari luar haknya
  */
@@ -26,4 +26,5 @@ fun main() {
     lambdaIncrement()
     anonIncrement()
     incrementClosure()
+    println(counter)
 }

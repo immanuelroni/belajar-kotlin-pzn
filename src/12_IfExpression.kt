@@ -15,7 +15,7 @@
  */
 
 fun main(){
-    val nilaiUjian = 80
+    val nilaiUjian = 60
     if(nilaiUjian>=80){
         println("Lolos Ujian")
     }else if (nilaiUjian>70){

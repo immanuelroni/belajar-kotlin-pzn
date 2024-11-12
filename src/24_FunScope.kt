@@ -6,7 +6,7 @@
  */
 
 fun call(){
-    //Hi()// ini akan error krn yang bisa panggil dalam fungsi main saja.
+    //Hi() // ini akan error krn yang bisa panggil dalam fungsi main saja.
 }
 
 

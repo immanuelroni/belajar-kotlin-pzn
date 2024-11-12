@@ -7,11 +7,15 @@ fun toUpper(data:String): String = data.uppercase()
 
 fun main() {
     // LAMBDA DUA PARAMETER
-    //membuat lambda
+    // membuat lambda
     // terlihat ribet tapi usefull
-    val contohLambda: (String, String) -> String ={
+
+    // kalau fun biasa function biasanya: sayHello(nama:String ,pesan: String, saweran: String? ): Unit{}
+    val contohLambda: (String, String) -> String = {
         firstName:String,
-        lastName:String -> val result = "$firstName, $lastName"
+        lastName:String
+        ->
+        val result = "$firstName, $lastName"
         result // baris terakhir akan dianggap sebagai return, dalam lambda tidak ada kata kunci return, jadi pastikan hal ini tidak dipakai untuk codes yang paramnya kompleks
     }
 

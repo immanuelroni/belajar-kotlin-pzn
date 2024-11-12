@@ -1,4 +1,4 @@
-/*
+ /*
     Kadang kita butuh data yang isinya berurutan misal  1 sampai dengan 100
     kalau pakai Array tentu akan ribet
     Caranya pakai tanda titi dua kali ..
@@ -29,6 +29,7 @@ fun main(){
 /*
     Range Terbalik
 */
+    println("------ downTo-------")
     val range2 = 1000 downTo 1
     println("/n Range DownTo")
     println(range2.count())
@@ -37,6 +38,7 @@ fun main(){
     println(range2.first)
     println(range2.last)
     println(range2.step)
+    println("--------------------")
 
 /*
     Namun bisa juga
